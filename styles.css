@@ -1,0 +1,225 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+}
+.header {
+  color: #FFFFFF;
+  background-color: #4F359B;
+  margin: 0 auto;
+}
+.header p {
+  color: #E3DFFF;
+}
+p {
+  font-size: 16px;
+  color: #080708;
+}
+h1 {
+  font-size: 50px;
+  margin-bottom: 0
+}
+h2 {
+  color: #585191;
+  text-transform: uppercase;
+  justify-content: center;
+}
+h3 {
+  font-size: 22px;
+  color: #E3DFFF
+}
+h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+h5 {
+  font-size: 20px;
+  color: #4F359B
+}
+h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+::selection {
+  color: white;
+  background-color: #585191
+}
+/* Header section */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  padding-bottom: 40px
+}
+.menu p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu-link {
+  margin-left: 10px;
+  color: #E3DFFF
+}
+.menu-size{
+  font-size: 25px
+}
+.menu-size .menu-link:hover {
+  font-size: 35px;
+  color: #99907D;
+}
+.menu-size .menu-link{
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.container {
+  margin: 0 auto;
+  padding-left: 150px;
+  padding-Right: 150px;
+}
+.header .container {
+  padding: 40px;
+}
+.parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent .image {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 100px;
+  padding-top: 20px;
+}
+
+/*About section*/
+.bold-letter::first-letter {
+  font-weight: bold;
+}
+/* Skills section */
+.container .skills-meter{
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px
+}
+.skills-meter meter {
+  margin-left: 10px;
+  margin-right: 10px;
+  flex: 3
+}
+.skills-meter p {
+  font-weight: bold;
+}
+meter::-webkit-meter-bar {
+  border-radius: 20px
+}
+meter::-webkit-meter-optimum-value {
+  background: #4F359B
+}
+
+/*experience section */
+.experience-entry {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: flex-end;
+}
+.experience-entry .date-and-job {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding-top: 20px
+}
+.date {
+  width: 150px;
+  height: 40px;
+  justify-content: flex-end;
+}
+.job-title {
+  margin: 0;
+  height: 40px;
+  padding-left: 15px
+}
+.experience-entry .company-details {
+  display: flex;
+  height: auto;
+}
+.company-details h4 {
+  padding-top: 10px;
+  margin-top: 0;
+  Margin-bottom: 0;
+}
+.job-description {
+  margin-top: 20px;
+  padding:0
+}
+
+/* footer section */
+.footer {
+  color: #F7EBEC;
+  background-color: #1D1E2C;
+  margin: 0 auto;
+}
+.footer .container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .name-and-jt {
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.name-and-JT h1{
+  font-size: 30px;
+  margin:0
+}
+.name-and-JT h3{
+font-size: 16px;
+margin-bottom: 30px;
+margin-top: 0;
+margin-left: 45px
+
+}
+.container .contact-links {
+  margin-right: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF
+}
+
+.fa-envelope-square:hover {
+  color: #99907D;
+}
+.fa-facebook:hover {
+  color: #99907D;
+}
+.fa-linkedin:hover {
+  color: #99907D;
+}
+.fa-github-square:hover {
+  color: #99907D;
+}
+.fa-phone-square-alt:hover {
+  color: #99907D;
+}
+/*Media queries*/
+@media (max-width: 500px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px
+  }
+  .parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .parent .image {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 0;
+    padding-top: 0
+  }
+}
